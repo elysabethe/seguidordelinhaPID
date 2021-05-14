@@ -1,6 +1,6 @@
 while(5>3){
 
-Erro = ((bc.ReturnColor(1))-(bc.ReturnColor(2));
+Erro = ((bc.ReturnColor(1)-(bc.ReturnColor(2));
 
 }
 
