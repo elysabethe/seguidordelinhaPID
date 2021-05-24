@@ -35,6 +35,15 @@ void Main(){
            bc.MoveFrontal(forca + proporcional, -forca - proporcional);
             
         }
+////////////////ADCIONADO AGR
+
+/////////////adcviomadagrsndkskfskf
+
+        if (bc.ReturnColor(0) == "PRETO" && bc.ReturnColor(1) == "BRANCO"){
+            bc.MoveFrontal(forca + proporcional, -forca - proporcional);
+        }
+
+
         if (bc.ReturnColor(1) == "BRANCO" && bc.ReturnColor(2) == "PRETO" && bc.ReturnColor(3) == "PRETO"){
             bc.MoveFrontal(forca + proporcional, forca - proporcional);
             bc.Wait(120);
@@ -47,9 +56,17 @@ void Main(){
         }
 
         if (bc.ReturnColor(1)=="PRETO" && bc.ReturnColor(2)=="PRETO"){
-            //bc.MoveFrontal(80,80);
             bc.MoveFrontal(forca + proporcional, forca - proporcional);
+
+         if (bc.ReturnColor(0) == "PRETO"){
+           bc.MoveFrontal(forca + proporcional, -forca - proporcional);         
         }
+             if (bc.ReturnColor(0)=="PRETO" && bc.ReturnColor(3)=="PRETO"){
+            bc.MoveFrontal(forca + proporcional, forca - proporcional);
+               }
+        }
+ 
+
 
           //INCLINAÇÃO by Alexandre
        if (bc.Inclination() > 0 && bc.Inclination() <= 341)
