@@ -3,8 +3,8 @@ void Main(){
 
     while(loop == true){ 
         // IMPLEMENTAÇÃO DO PID
-        float error = bc.Lightness(1) - bc.Lightness(2);
-        float kP = 30;
+        float error = bc.Lightness(1) - bc.Lightness(2); //dois do meio
+        float kP = 30;                                     //
         float proporcional = kP * error;
         float forca = 100;
 
@@ -63,12 +63,8 @@ void Main(){
                }
          if (bc.ReturnColor(0) == "PRETO"){
            bc.MoveFrontal(forca + proporcional, -forca - proporcional);         
+        }  
         }
-             
-        }
- 
-
-
           //INCLINAÇÃO by Alexandre
        if (bc.Inclination() > 0 && bc.Inclination() <= 341)
         {
