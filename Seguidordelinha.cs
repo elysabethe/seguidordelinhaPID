@@ -58,12 +58,13 @@ void Main(){
         if (bc.ReturnColor(1)=="PRETO" && bc.ReturnColor(2)=="PRETO"){
             bc.MoveFrontal(forca + proporcional, forca - proporcional);
 
+    if (bc.ReturnColor(0)=="PRETO" && bc.ReturnColor(3)=="PRETO"){
+            bc.MoveFrontal(forca + proporcional, forca - proporcional);
+               }
          if (bc.ReturnColor(0) == "PRETO"){
            bc.MoveFrontal(forca + proporcional, -forca - proporcional);         
         }
-             if (bc.ReturnColor(0)=="PRETO" && bc.ReturnColor(3)=="PRETO"){
-            bc.MoveFrontal(forca + proporcional, forca - proporcional);
-               }
+             
         }
  
 
